@@ -136,7 +136,7 @@ This is an external compatibility issue rather than a direct bug in the script. 
 would include checks for repository support or fallback mechanisms to prevent complete failure.
 
 
-#Issue 4: Repeated Dependency Failures
+#Issue 4: Cascading Dependency Failures During Installation
 
 Observation:
 Even after fixing one issue, new errors appeared at later stages of installation.
@@ -146,7 +146,7 @@ To further analyze dependency issues, I ran:
     sudo apt update 
 
 ### Screenshot of dependency errors:
-![Repository error](screenshots/issue4_repository_error.png)
+![Issue 4 Screenshot](screenshots/issue4.png)
 
 During execution of this command, multiple repository-related and dependency errors were observed, indicating incompatibility with newer Ubuntu 25 repositories.
 
