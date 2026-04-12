@@ -111,7 +111,7 @@ After correcting the command and re-running the installer, the error was resolve
 syntax rather than a deeper dependency problem.
 
 
-#Issue 3: KiCad Repository (PPA) Error
+#Issue 3: External Repository Compatibility Failure (KiCad PPA)
 
 Error Observed:
     404 Not Found – repository does not have a Release file
@@ -119,8 +119,8 @@ Error Observed:
 ### Screenshots of error observed
 
 The following screenshots show the exact error encountered during installation:
-![KiCad Error](screenshots/kicad_error1.png)
-![KiCad Error](screenshots/kicad_error2.png)
+![Command Screenshot](screenshots/issue3_command.png)
+![Error Screenshot](screenshots/issue3_error.png)
 
 Investigation:
 While running-
