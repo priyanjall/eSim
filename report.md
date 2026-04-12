@@ -73,16 +73,16 @@ either add proper support for newer versions or avoid strict version mapping and
 
 
 
-#Issue 2: Incorrect apt-get Command (Fixed)
+#Issue 2: Incorrect Package Installation Syntax for xz-utils (Fixed)
 
 Error Observed:
     “E: Invalid operation xz-utils”
 
 ### Screenshots of error observed:
-![Invalid apt command](screenshots/issue2_invalid_command.png)
+![Error Screenshot](screenshots/issue2_error_command.png)
 
 ### After fixing the command:
-![Correct apt command](screenshots/issue2_correct_command.png)
+![Fixed Screenshot](screenshots/issue2_fixed_command.png)
 
 Investigation:
 To locate the issue, I used:
