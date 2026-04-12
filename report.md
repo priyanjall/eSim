@@ -50,7 +50,7 @@ While running the installer on Ubuntu 25.04, no direct error message related to 
 made me suspect that the version might not be handled properly.
 
 ### Screenshot of error observed:
-![Issue 1](screenshots/issue1.pn)
+![Issue 1](screenshots/issue1.png)
 
 Investigation:
 To understand this, I checked the install-eSim.sh script and searched for how the Ubuntu version is being handled using:
