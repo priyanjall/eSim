@@ -79,10 +79,10 @@ Error Observed:
     “E: Invalid operation xz-utils”
 
 ### Screenshots of error observed:
-![Error Screenshot](screenshots/issue2_error command.png)
+![Error Screenshot](screenshots/issue2_error_command.png)
 
 ### After fixing the command:
-![Fixed Screenshot](screenshots/issue2_fixed command.png)
+![Fixed Screenshot](screenshots/issue2_fixed_command.png)
 
 Investigation:
 To locate the issue, I used:
