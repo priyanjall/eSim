@@ -43,14 +43,14 @@ The debugging process was carried out step-by-step:
 
 Several issues were encountered during installation on Ubuntu 25.04. The most critical ones are discussed below:
 
-#Issue 1: Incorrect Handling of Ubuntu 25.04 Version
+#Issue 1: Ubuntu 25.04 Not Explicitly Supported in Installation Script
 
 Error Observed:
 While running the installer on Ubuntu 25.04, no direct error message related to the version was shown. However, during execution, the installation did not behave as expected, which
 made me suspect that the version might not be handled properly.
 
 ### Screenshot of error observed:
-![Version Mapping](screenshots/issue1_version_mapping.png)
+![Issue 1](screenshots/issue1.png)
 
 Investigation:
 To understand this, I checked the install-eSim.sh script and searched for how the Ubuntu version is being handled using:
