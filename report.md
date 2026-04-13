@@ -50,7 +50,7 @@ While running the installer on Ubuntu 25.04, no direct error message related to 
 made me suspect that the version might not be handled properly.
 
 ### Screenshot of error observed:
-![Issue 1 Error](screenshots/Issue-1.png)
+![Issue 1 Error](installers/screenshots/Issue-1.png)
 
 Investigation:
 To understand this, I checked the install-eSim.sh script and searched for how the Ubuntu version is being handled using:
@@ -79,10 +79,10 @@ Error Observed:
     “E: Invalid operation xz-utils”
 
 ### Screenshots of error observed:
-![Issue 2 Error](screenshots/Issue-2_error.png)
+![Issue 2 Error](installers/screenshots/Issue-2_error.png)
 
 ### After fixing the command:
-![Issue 2 Command](screenshots/Issue-2_command.png)
+![Issue 2 Command](installers/screenshots/Issue-2_command.png)
 
 Investigation:
 To locate the issue, I used:
@@ -119,8 +119,8 @@ Error Observed:
 ### Screenshots of error observed
 
 The following screenshots show the exact error encountered during installation:
-![Issue 3 Command](screenshots/Issue-3_command.png)
-![Issue 3 Error](screenshots/Issue-3_error.png)
+![Issue 3 Command](installers/screenshots/Issue-3_command.png)
+![Issue 3 Error](installers/screenshots/Issue-3_error.png)
 
 Investigation:
 While running-
@@ -146,7 +146,7 @@ To further analyze dependency issues, I ran:
     sudo apt update 
 
 ### Screenshot of dependency errors:
-![Issue 4 Error](screenshots/Issue-4.png)
+![Issue 4 Error](installers/screenshots/Issue-4.png)
 
 During execution of this command, multiple repository-related and dependency errors were observed, indicating incompatibility with newer Ubuntu 25 repositories.
 
@@ -171,7 +171,7 @@ Observations:
 
 ### Screenshots of verification on Ubuntu 24.04:
 
-![Verification](screenshots/Verification_ubuntu24.png)
+![Verification](installers/screenshots/Verification_ubuntu24.png)
 
 Key Insight:
 The same script works properly on Ubuntu 24.04, confirming that most issues in Ubuntu 25.04 are due to compatibility limitations rather than incorrect logic (except the apt command 
