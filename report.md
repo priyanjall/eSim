@@ -43,14 +43,14 @@ The debugging process was carried out step-by-step:
 
 Several issues were encountered during installation on Ubuntu 25.04. The most critical ones are discussed below:
 
-#Issue 1: Ubuntu 25.04 Not Explicitly Supported in Installation Script
+#Issue 1: Unsupported Ubuntu Version Error
 
 Error Observed:
 While running the installer on Ubuntu 25.04, no direct error message related to the version was shown. However, during execution, the installation did not behave as expected, which
 made me suspect that the version might not be handled properly.
 
 ### Screenshot of error observed:
-![Issue 1](screenshots/issue1.png)
+![Issue 1 Error](screenshots/Issue-1.png)
 
 Investigation:
 To understand this, I checked the install-eSim.sh script and searched for how the Ubuntu version is being handled using:
@@ -73,16 +73,16 @@ either add proper support for newer versions or avoid strict version mapping and
 
 
 
-#Issue 2: Incorrect Package Installation Syntax for xz-utils (Fixed)
+#Issue 2: Invalid apt Command Syntax for xz-utils (Fixed)
 
 Error Observed:
     “E: Invalid operation xz-utils”
 
 ### Screenshots of error observed:
-![Error Screenshot](screenshots/issue2_error_command.png)
+![Issue 2 Error](screenshots/Issue-2_error.png)
 
 ### After fixing the command:
-![Fixed Screenshot](screenshots/issue2_fixed_command.png)
+![Issue 2 Command](screenshots/Issue-2_command.png)
 
 Investigation:
 To locate the issue, I used:
@@ -111,7 +111,7 @@ After correcting the command and re-running the installer, the error was resolve
 syntax rather than a deeper dependency problem.
 
 
-#Issue 3: External Repository Compatibility Failure (KiCad PPA)
+#Issue 3: KiCad PPA Repository Incompatibilty (404 Release File Error)
 
 Error Observed:
     404 Not Found – repository does not have a Release file
@@ -119,8 +119,8 @@ Error Observed:
 ### Screenshots of error observed
 
 The following screenshots show the exact error encountered during installation:
-![Command Screenshot](screenshots/issue3_command.png)
-![Error Screenshot](screenshots/issue3_error.png)
+![Issue 3 Command](screenshots/Issue-3_command.png)
+![Issue 3 Error](screenshots/Issue-3_error.png)
 
 Investigation:
 While running-
@@ -136,7 +136,7 @@ This is an external compatibility issue rather than a direct bug in the script. 
 would include checks for repository support or fallback mechanisms to prevent complete failure.
 
 
-#Issue 4: Cascading Dependency Failures During Installation
+#Issue 4: Dependency Resolution Failures During Installation
 
 Observation:
 Even after fixing one issue, new errors appeared at later stages of installation.
@@ -146,7 +146,7 @@ To further analyze dependency issues, I ran:
     sudo apt update 
 
 ### Screenshot of dependency errors:
-![Issue 4 Screenshot](screenshots/issue4.png)
+![Issue 4 Error](screenshots/Issue-4.png)
 
 During execution of this command, multiple repository-related and dependency errors were observed, indicating incompatibility with newer Ubuntu 25 repositories.
 
@@ -171,7 +171,7 @@ Observations:
 
 ### Screenshots of verification on Ubuntu 24.04:
 
-![Ubuntu 24 Verification](screenshots/ubuntu24_verification.png)
+![Verification](screenshots/Verification_ubuntu24.png)
 
 Key Insight:
 The same script works properly on Ubuntu 24.04, confirming that most issues in Ubuntu 25.04 are due to compatibility limitations rather than incorrect logic (except the apt command 
