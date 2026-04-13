@@ -1,6 +1,6 @@
 # eSim Installation Debugging (Task 4 Submission)
 
-This repository contains my work for the eSim Summer Fellowship 2026 Task 4.
+This repository contains my work completed for Task 4 of the eSim Summer Fellowship 2026.
 
 Detailed report with screenshots:
 [View report.md](report.md)
