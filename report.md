@@ -79,10 +79,10 @@ Error Observed:
     “E: Invalid operation xz-utils”
 
 ### Screenshots of error observed:
-![Issue 2 Error](installers/screenshots/Issue-2_error.png)
+![Issue 2 Error](installers/screenshots/Issue-2_command.png)
 
 ### After fixing the command:
-![Issue 2 Command](installers/screenshots/Issue-2_command.png)
+![Issue 2 Command](installers/screenshots/Issue-2_error.png)
 
 Investigation:
 To locate the issue, I used:
